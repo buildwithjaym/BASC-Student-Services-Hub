@@ -331,12 +331,9 @@ function doSearch(q) {
         return hay.includes(query);
     });
 
-    const officeMatches = data.offices.filter(o => {
-        const hay = [o.name, o.location, ...(o.keywords || [])].join(" ").toLowerCase();
-        return hay.includes(query);
-    });
 
-    if (serviceMatches.length === 0 && officeMatches.length === 0) {
+
+    if (serviceMatches.length === 0) {
         results.appendChild(card({
             title: "No matches found",
             subtitle: "Try another keyword (e.g., 'TOR', 'portal', 'INC', 'passbook').",
