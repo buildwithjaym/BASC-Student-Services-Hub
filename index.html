@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <!-- TOP BAR -->
   <header class="topbar">
     <div class="brand">
       <img class="logo" src="assets/logo.jpg" alt="BASC Logo" />
@@ -22,7 +21,6 @@
     <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
   </header>
 
-  <!-- DRAWER MENU -->
   <nav id="drawer" class="drawer" aria-hidden="true">
     <div class="drawer-inner">
       <div class="drawer-head">
@@ -36,7 +34,13 @@
       <a class="navlink" href="#templates" data-route="templates">Templates</a>
       <a class="navlink" href="#about" data-route="about">About</a>
 
-      <!-- SOCIAL (INSIDE MENU, BELOW ABOUT) -->
+      <a class="navlink navlink-survey" href="https://forms.gle/P2RpEqnSgt345ADi8" target="_blank" rel="noopener">
+        Take the Student Survey
+        <span class="muted" style="display:block;margin-top:4px;font-size:12px;">
+          Help improve BASC services — takes ~1 minute
+        </span>
+      </a>
+
       <div class="menu-social" aria-label="Social links">
         <div class="menu-social-title">Connect with us:</div>
 
@@ -48,8 +52,6 @@
             </svg>
           </a>
 
-         
-
           <a class="msicon gh" href="https://github.com/buildwithjaym/BASC-Student-Services-Hub?tab=readme-ov-file" target="_blank" rel="noopener"
              title="GitHub" aria-label="GitHub">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
@@ -60,7 +62,6 @@
 
         <div class="menu-social-hint">Icons open in browser</div>
       </div>
-      <!-- /SOCIAL -->
 
       <div class="drawer-foot">
         <div class="badge">Green • Yellow • White</div>
@@ -69,14 +70,11 @@
     </div>
   </nav>
 
-  <!-- MAIN -->
   <main class="container">
-    <!-- HOME -->
     <section id="homeView" class="view">
       <div class="hero">
         <h1>Find what you need!</h1>
         <p>Search a request. Get the steps, requirements, and office.</p>
-
 
         <div class="searchbar">
           <input id="searchInput" type="text" placeholder="Search services or offices..." autocomplete="off" />
@@ -94,7 +92,6 @@
       <div id="results" class="card-grid"></div>
     </section>
 
-    <!-- SERVICES -->
     <section id="servicesView" class="view hidden">
       <div class="section-head">
         <h2>Services</h2>
@@ -103,7 +100,6 @@
       <div id="servicesList" class="card-grid"></div>
     </section>
 
-    <!-- OFFICES -->
     <section id="officesView" class="view hidden">
       <div class="section-head">
         <h2>Offices</h2>
@@ -112,7 +108,6 @@
       <div id="officesList" class="card-grid"></div>
     </section>
 
-    <!-- TEMPLATES -->
     <section id="templatesView" class="view hidden">
       <div class="section-head">
         <h2>Templates</h2>
@@ -121,7 +116,6 @@
       <div id="templatesList" class="card-grid"></div>
     </section>
 
-    <!-- ABOUT -->
     <section id="aboutView" class="view hidden">
       <div class="section-head">
         <h2>About</h2>
@@ -172,7 +166,6 @@
       </div>
     </section>
 
-    <!-- DETAIL -->
     <section id="detailView" class="view hidden">
       <button id="backBtn" class="btn ghost" type="button">← Back</button>
       <div id="detailBody" class="panel"></div>
@@ -180,10 +173,10 @@
   </main>
 
   <footer class="footer">
-    <div>© <span id="year"></span> BASC Student Services Hub<br> • Made by Jaymar</div>
+    <div>© <span id="year"></span> BASC Student Services Hub • SSC</div>
   </footer>
 
-  <script src="data.js?v=3"></script>
-  <script src="app.js?v=3"></script>
+  <script src="data.js?v=3.12"></script>
+  <script src="app.js?v=3.12"></script>
 </body>
 </html>
